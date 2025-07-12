@@ -9,10 +9,6 @@
 </a>
 
 
-TODO: 
-- add instructions on how to build a docker image for a react app
-- instructions on docker tag 
-
 ## Create react app
 ```bash
 npm create vite@latest my-app -- --template react
@@ -77,20 +73,22 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
-
+build the docker image and spin up the container:
 
 ```
-# Build the image 
 docker build -t <image_name> .  
-
-# spin up the container
 docker run -p 8080:80 <image_name>
 ```
 
+## Push to Azure Container Registry (ACR)
 
+```bash
+docker login <your-acr-name>.azurecr.io
+docker tag <image_name> <your-acr-name>.azurecr.io/<image_name>
+docker push <your-acr-name>.azurecr.io/<image_name>
+```
 
-
-## mac arm-based 
+## Mac arm-based (M-chip)
 
 Building docker image on mac arm-based machine will generate an image that is not compatible with Azure Web App for Linux as it uses a different architecture (linux/amd64). The solution is to build the image using `buildx` which allows you to specify the platform.
 
