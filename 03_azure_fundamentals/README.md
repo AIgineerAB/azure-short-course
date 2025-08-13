@@ -71,3 +71,39 @@ One can build an IT infrastructure with different Azure resources, or combine th
 
 🔍 [More on Azure compute services](https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/)
 
+
+## Managing Azure resources
+Image if you work alone and develop only locally on your laptop, your cost is the price of your laptop that you had paid. If your laptop is running scripts slowly, you can check things like the current usage of CPU and RAM to troubleshooting the performance issue. You do not need to worry about access control either as you are the only one who can open your laptop with your username and password. 
+
+But if your are using IT services via Azure, how do you manage you Azure resources, for instances, regarding access control, monitoring cost and performance?
+
+
+## Interacting with Azure 
+You can create and manage Azure resources in different ways:
+
+- GUI
+  - [Azure portal](http://portal.azure.com): a web-based graphical user interface to interact with your Azure environments, as an alternative to command-line tools (i.e. writing commands)
+- Command line tools
+  - Azure CLI: uses Bash commands
+  - Azure PowerShell: uses PowerShell commands
+  - both can be installed locally and run in local shells,  or via Azure Cloud Shell, a web-based shell tool
+
+>[!Note] 
+>If you want to delete a resource group, then you can either use Azure CLI command:
+>```
+>az group delete -n RG01
+>```
+>or Azure PowerShell command:
+>```
+>Remove-AzResourceGroup -Name "RG01"
+>```
+
+- Infrastructure as Code (IaC) <br>
+IaC refers to writing codes to define and deploy resources, making it possible to reproduce the same resources
+  - Azure Resource Manager (ARM): Azure’s native service for deploying and managing resources using declarative syntax including:
+    - ARM templates
+    - Bicep files
+  - Terraform: a popular third-party, multi-cloud CLI tool for IaC. Unlike ARM templates and Bicep files which are Azure-specific, Terraform can manage infrastructure across multiple cloud providers (Azure, AWS & GCP)
+  
+>[!Tip] 
+>In this course, we will start with interacting with Azure using Azure portal, then we will learn about IaC with Terraform.Follow exercise 0.2 to interact with Azure in different ways
