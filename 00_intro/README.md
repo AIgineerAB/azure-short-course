@@ -32,8 +32,23 @@ For example, the company can alternatively set up a cloud IT infrastructure as b
 - **scalability and availability** <br>
   cloud providers maintain many server computers behind the scenes and are able to scale up their IT services flexibly. In this case, the capacity of the cloud and web servers can be adjusted according to realtime needs. Downtimes of the company's website can thus be prevented, without the company purchasing more capable computers that are left idle during off-peak hours when less customers are browsing the website.
 
-
 <img src="https://github.com/kokchun/assets/blob/main/azure/cloud_it.png?raw=true" alt="IT infrastructure on the cloud" width="500">
+
+## What does Azure provide?
+
+As a cloud platform provider with big market shares, Azure is providing a wide range of IT services via internet, including servers, storage and networking etc. Compared to on-premises IT infrastructure, companies now share some of the responsibilities to set up and maintain its IT infrastructure with cloud platform provider as Azure. How much of the responsibilities are shared depends on whether an IT service is offered as IaaS, PaaS or SaaS. This way of categorizing IT services is called shared responsibility model:
+
+- **Infrastructure as Service (IaaS)** <br>
+  If you create a virtual machine in Azure, you are using IaaS because you are responsible for everything apart from handling the physical hardware. For example, you need to choose the operation system, install and patch all softwares necessary for your work.
+- **Platform as a Service (PaaS)** <br>
+  With PaaS, developers can skip caring about the servers behind and focus on developing applications on Azure's servers behind the scenes. Azure App Service is a PaaS example, where developers can deploy apps without managing the infrastructure.
+- **Software as a Service (SaaS)** <br>
+  With SaaS, users can use Azure's softwares online. Azure AI services are examples of SaaS available on Azure.
+
+🔍 [Read more on Shared responsibility models](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility)
+
+<!--check: a resource like cosmo db can have a serverless option -->
+<!--exercise: describe and reason differet SQL db only IaaS and PaaS? -->
 
 ## Other videos 📹
 
