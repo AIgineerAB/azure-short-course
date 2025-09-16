@@ -5,7 +5,7 @@
 - pull the image from Azure Container Registry into Azure App Service
 
 <a href="https://youtu.be/L7xfKPQLgTA" target="_blank">
-  <img src="https://github.com/kokchun/assets/blob/main/azure/react_deploy_web_app.png?raw=true" alt="DESCRIPTION" width="600">
+  <img src="https://github.com/kokchun/assets/blob/main/azure/react_deploy_web_app.png?raw=true" alt="deploy dockerized react app" width="600">
 </a>
 
 
