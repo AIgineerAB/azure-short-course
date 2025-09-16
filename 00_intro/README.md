@@ -53,3 +53,4 @@ As a cloud platform provider with big market shares, Azure is providing a wide r
 ## Other videos 📹
 
 ## Read more 👓
+- [Microsoft learn - Introduction to Azure](https://learn.microsoft.com/en-us/training/courses/az-900t00#course-syllabus)
