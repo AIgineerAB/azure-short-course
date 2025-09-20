@@ -1,22 +1,19 @@
-# Exercise 0 -
+# Exercise 0
 
-In this exercise, you get to familiarize yourself with ...
+In this exercise, you get to familiarize yourself with Azure both theory and practical 
+
+
+## NOT FINISHED YET
 
 ## 0. practical exercise
 
-DESCRIPTION
 
-&nbsp; a)
 
-&nbsp; b)
+## 3. Linux VM
 
-&nbsp; c)
+Follow these [instructions here](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu) to create a Linux VM and try to SSH into it.
 
-&nbsp; d)
 
-&nbsp; e)
-
-## 1. practical exercise
 
 DESCRIPTION
 
